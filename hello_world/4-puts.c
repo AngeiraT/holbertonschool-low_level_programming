@@ -3,10 +3,10 @@
 /**
  * main - Starting the execution
  *
- * Return: Always 0 (program will execute successfully)
+ * Return: Always 0 (program will execute successfuly)
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	printf("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
