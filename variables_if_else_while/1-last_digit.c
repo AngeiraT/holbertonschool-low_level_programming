@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int n;
+	int n; last;
 
 	last = n % 10;
 	srand(time(0));
