@@ -2,23 +2,19 @@
 
 /**
  * _isalpha - Entry point
- *@c: alpha
+ * @c: uppercase
  *Return: Void
  */
 
 int _isalpha(int c)
 {
 
-	char l;
-	int count = 10;
-
-	for (count = 0; count <= 9; count++)
-	{
-
-		for (l = 'a'; l <= 'z'; l++)
+	if (c >= 65 && c <= 90)
 		{
-			putchar(l);
+		return (1);
 		}
-		putchar('\n');
-	}
+	else
+		{
+		return (0);
+		}
 }
