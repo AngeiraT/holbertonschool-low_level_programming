@@ -2,7 +2,7 @@
 
 /**
  *print_numbers - Entry point
- *@n: numbers from 0-9
+ *
  *Return: Void
  */
 
