@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* puts_half - Entry
-* @str: half the string
+*puts_half - Entry
+*@str: half the string
 *
-* Return: Sucess 0
+*Return: Sucess 0
 */
 
 void puts_half(char *str)
