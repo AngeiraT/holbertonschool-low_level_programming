@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *2puts - Entry point
+ *puts2 - Entry point
  *@str: string
- *Return: Sucess 1
+ *Return: Sucess 0
  */
 void puts2(char *str)
 {
