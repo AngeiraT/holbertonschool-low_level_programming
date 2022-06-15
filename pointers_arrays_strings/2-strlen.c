@@ -14,5 +14,5 @@ int _strlen(char *s)
 	{
 		printf("%d", lenght);
 	}
-	return (lenght);	
+	return (lenght);
 }
