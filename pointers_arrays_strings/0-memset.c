@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *cap_string - Entry point
+ * *_memset - Entry point
  *@s: string of words
  *@b: contanst byte
  *@n: bytes of the memory
