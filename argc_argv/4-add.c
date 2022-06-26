@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int i, j, sum;
+
 	sum = 0;
 
 	if (argc < 1)
@@ -34,7 +35,7 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", sum);
 		return (0);
-		
+
 	}
 	return (0);
 }
