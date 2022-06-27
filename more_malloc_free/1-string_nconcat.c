@@ -17,7 +17,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int length2 = strlen(s2);
 	char *array = calloc(n, sizeof(char));
 
-	n = length1 + length2 + 1;
+	n = length1 + length2;
 
 	for (i = 0; i < length1; i++)
 	{
@@ -27,6 +27,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		array[length1 + i] = s2[i];
 	}
-	array[n - 1] = '\0';
+	array[n] = '\0';
 	return (array);
 }
