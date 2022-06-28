@@ -21,18 +21,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	n = length1 + length2 + 1;
 
-	while (*s1 != '\0')
+	for (i = 0; i < length1; i++)
 	{
-		array[i] = *s1;
-		s1++;
-		i++;
+		array[i] = s1[i];
 	}
-	while (*s2 != '\0')
+	for (i = 0; i < length2; i++)
 	{
-		array[i] = *s2;
-		s2++;
-		i++;
+		array[i + length1] = s2[i];
 	}
-	array[i] = '\0';
+	array[n - 1] = '\0';
 	return (array);
 }
