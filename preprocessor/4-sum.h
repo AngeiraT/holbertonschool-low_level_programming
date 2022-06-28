@@ -1,6 +1,6 @@
-#ifndef SUM
-#define SUM
+#ifndef _SUM_
+#define _SUM_
 
-#define ABS(x) SUM(x, y) (x + y)
+#define SUM(x, y) ((x) + (y))
 
 #endif
