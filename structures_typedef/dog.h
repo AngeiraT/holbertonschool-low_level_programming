@@ -1,6 +1,13 @@
 #ifndef _DOG_H_
 #define _DOG_H_
 
+/**
+ *struct dog - Entry point
+ *@name: name dog pointer'=
+ *@age: float
+ *@owner: char pointer
+ */
+
 struct dog
 {
 	char *name;
