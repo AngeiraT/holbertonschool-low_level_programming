@@ -4,7 +4,6 @@
 
 /**
  * _strlen - return length of a string
- *
  * @s: char type
  * Return:  length of string
  */
@@ -42,7 +41,7 @@ char *_strcpy(char *dest, char *src)
  * @name: char type
  * @age: float type
  * @owner: char type
- * Return: Always success
+ * Return: Success
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
