@@ -13,14 +13,16 @@ unsigned int binary_to_uint(const char *b)
 	int decimalval = 1;
 	int idx;
 
-	if (b == NULL)
-		return (0);
-
 	for (idx = (slen - 1); idx >= 0; idx--)
 	{
 		if (b[idx] == '1')
 		total += decimalval;
 		decimalval *= 2;
+
+		if (b[idx] != '0' && b[idx] != '1')
+		{
+			return (0);
+		}
 	}
 	return (total);
 }
