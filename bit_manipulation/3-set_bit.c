@@ -11,15 +11,15 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int idx = 1;
+	unsigned long int bitval = 1;
 
 	if (index > 32)
 	{
 		return (-1);
 	}
 
-	idx = idx << index;
-	*n = *n | idx;
+	bitval = bitval << index;
+	*n = *n | bitval;
 
 	return (1);
 }
