@@ -10,7 +10,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *ht;
 	unsigned long int idx;
 
-	ht = malloc(sizeof(hash_table_t)); /*Allocates memory for the struct hash_table_t*/
+	ht = malloc(sizeof(hash_table_t));/*Allocates memory for the struct*/ 
 	if (ht == NULL || size == 0)
 		return (NULL);
 
