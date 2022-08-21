@@ -7,20 +7,20 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *ht;
+	hash_table_t *ht;
 	unsigned long int idx;
 
-	ht = malloc(sizeof(hash_table_t));
+	ht = malloc(sizeof(hash_table_t)); /*Allocates memory for the struct hash_table_t*/
 	if (ht == NULL || size == 0)
 		return (NULL);
 
 	ht->array = malloc(sizeof(hash_node_t *) * size);
 	if (ht->array == NULL)
-		return (NULL);
+	return (NULL);
 	ht->size = size;
 
 	for (idx = 0; idx < size; idx++) /*Initializes array slots to NULL*/
 		ht->array[idx] = NULL;
 
 	return (ht);
-}
+	}
