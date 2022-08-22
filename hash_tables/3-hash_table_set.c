@@ -10,31 +10,70 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	/* declarations */
-    hash_node_t *new = NULL;
-	char *key_cp, *value_cp;
-	unsigned long int index = 0;
+    hash_node_t *new, *head;
+	unsigned long int index;
 
-    /* check for table, key, value */
-	if ((strcmp(key, "") == 0 || key == NULL || value == NULL || ht == NULL))
+	/* check for table, key, value */
+	if (!(ht && key && *key && value))
 		return (0);
-
-	key_cp = strdup(key);
-	value_cp = strdup(value);
-
-	new = malloc(sizeof(hash_node_t));/* look for place to add */
-	if (new == NULL)
-		return (0);
-	new->key = key_cp;
-	new->value = value_cp;
 
 	index = key_index((const unsigned char *)key, ht->size);
+	head = ht->array[index];
+	new = NULL;
 
-	if (ht->array[index] == NULL)
-		new->next = NULL;
-	else
-		new->next = ht->array[index];
-
+	/* look for place to add */
+	while (head)
+	{
+		if (!strcmp(key, head->key))
+		{	/* value must be duped */
+			char *newval = strdup(value);
+			/* check for bad value */
+			if (!newval)
+				return (0);
+			free(head->value);
+			head->value = newval;
+			return (1);
+		}
+		head = head->next;
+	}
+	new = make_node(key, value);
+	/* check fail */
+	if (!new)
+		return (0);
+	new->next = ht->array[index];
 	ht->array[index] = new;
-
 	return (1);
+}
+/**
+ * make_node - adds element to hash table/ chains
+ * @key: where to add it
+ * @value: what to add
+ * Return: 1 on success, 0 otherwise
+ */
+hash_node_t *make_node(const char *key, const char *value)
+{
+	/* declarations */
+	hash_node_t *new;
+
+	new = calloc(1, sizeof(hash_node_t));
+	/* if calloc fail */
+	if (!new)
+		return (0);
+	new->key = strdup(key);
+	/* if bad key */
+	if (!new->key)
+	{
+		free(new);
+		return (0);
+	}
+	new->value = strdup(value);
+	/* if bad thing */
+	if (!new->value)
+	{
+		free(new->key);
+		free(new);
+		return (0);
+	}
+	/* if all is well */
+	return (new);
 }
