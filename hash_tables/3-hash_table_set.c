@@ -9,8 +9,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	/* declarations */
-    hash_node_t *new, *head;
+	hash_node_t *new, *head;/* declarations */
 	unsigned long int index;
 
 	/* check for table, key, value */
