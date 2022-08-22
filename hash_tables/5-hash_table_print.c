@@ -1,34 +1,36 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - retrieves a value associated with key
- * @ht: hash table to search in
- * @key: the key
- * Return: value of element or NULL
+ * hash_table_print - a func what prints the hash table
+ * @ht: the hash table
+ * Return: void
  */
-char *hash_table_get(const hash_table_t *ht, const char *key)
+void hash_table_print(const hash_table_t *ht)
 {
-	/* declarations */
+	/*declarations */
+	unsigned long int iterate;
+	unsigned int flag = 0;
 	hash_node_t *location;
-	unsigned long int index;
 
-	/* check for problems */
-	if (!(ht && key && *key))
+	/* checking for a table */
+	if (!ht)
+		return;
+	/* print opening brace */
+	printf("{");
+	/* iterate through hash table unless it's the end */
+	for (iterate = 0; iterate < ht->size; iterate++)
 	{
-		return (0);
+		location = ht->array[iterate];
+		while (location)
+		{
+			/* flag off until first item is printed */
+			if (flag)
+				printf(", ");
+			printf("'%s': '%s'", location->key, location->value);
+			flag = 1;
+			location = location->next;
+		}
 	}
-
-	/* get the index, get location */
-	index = key_index((const unsigned char *)key, ht->size);
-	location = ht->array[index];
-	/* find the location of key */
-	while (location)
-	{
-		/* if strcmp returns 0 we have found it, or keep moving */
-		if (strcmp(location->key, key) == 0)
-			return (location->value);
-		location = location->next;
-	}
-	/* not found */
-	return (NULL);
+	/* print closing brace & newline */
+	printf("}\n");
 }
