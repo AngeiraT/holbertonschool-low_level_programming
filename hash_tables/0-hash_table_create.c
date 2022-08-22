@@ -11,7 +11,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	unsigned long int idx;
 
 	ht = malloc(sizeof(hash_table_t));/*Allocates memory for the struct*/
-	if (ht == NULL || size == 0)
+	if (ht == NULL || size == 0)/*if size fail*/
 		return (NULL);
 
 	ht->array = malloc(sizeof(hash_node_t *) * size);
