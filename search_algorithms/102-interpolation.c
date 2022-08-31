@@ -14,11 +14,11 @@ int interpolation_search(int *array, size_t size, int value)
 	size_t pos;
 
 	if (!array || size == 0) /*Check if value is present*/
-		return (-1); 
+		return (-1);
     /* an element is present in array must be in range define by corner*/
 	low = 0;
 	high = size - 1;
-	while (low < high) 
+	while (low < high)
 	{   /*Keeping uniform distribution*/
 		pos = low + (((double)(high - low) /
 		(array[high] - array[low])) * (value - array[low]));
