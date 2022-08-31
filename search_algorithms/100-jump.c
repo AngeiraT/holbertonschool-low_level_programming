@@ -37,6 +37,6 @@ int jump_search(int *array, size_t size, int value)
 			return (prev);
 		prev++;
 	}
-	/* If we reached next block or end of array, the value doesn't exist in the array */
+	/*If we reached end of array, the value doesn't exist in the array */
 	return (-1);
 }
