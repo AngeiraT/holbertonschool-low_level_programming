@@ -54,7 +54,7 @@ Follow the following instructions to get a copy of the program and run in your l
  
 * Clone the following repository.
 ```
-https://github.com/PabloYepes27/holbertonschool-lower_level_programming.git
+https://github.com/AngeiraT/holbertonschool-lower_level_programming.git
 ```
 ---
  
