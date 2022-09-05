@@ -1,50 +1,66 @@
-# Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
+# Low Level Programming & Algorithms
 
-This repository contains programs written for the low-level programming and
-algorithm track at Holberton School. In these projects, which  occurred
-throughout the duration of the Year 1 curriculum, I learned about data
-structures, algorithms, and other low-level programming concepts while
-working in the C language. The specific list of projects contained follows:
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg)
 
-* [0x00. C - Hello, World](./0x00-hello_world)
-* [0x01. C - Variables, if, else, while](./0x01-variables_if_else_while)
-* [0x02. C - Functions, nested loops](./0x02-functions_nested_loops)
-* [0x03. C - More functions, more nested loops](./0x03-more_functions_nested_loops)
-* [0x04. C - Pointers, arrays and strings](./0x04-pointers_arrays_strings)
-* [0x05. C - More pointers, arrays and strings](./0x05-pointers_arrays_strings)
-* [0x06. C - Even more pointers, arrays and strings](./0x06-pointers_arrays_strings)
-* [0x07. C - Recursion](./0x07-recursion)
-* [0x08. C - Static libraries](./0x08-static_libraries)
-* [0x09. C - argc, argv](./0x09-argc_argv)
-* [0x0A. C - malloc, free](./0x0A-malloc_free)
-* [0x0B. C - More malloc, free](./0x0B-more_malloc_free)
-* [0x0C. C - Preprocessor](./0x0C-preprocessor)
-* [0x0D. C - Structures, typedef](./0x0D-structures_typedef)
-* [0x0E. C - Function pointers](./0x0E-function_pointers)
-* [0x0F. C - Variadic functions](./0x0F-variadic_functions)
-* [0x10. C - printf](https://github.com/bdbaraban/printf/tree/master)
-* [0x11. C - Singly linked lists](./0x11-singly_linked_lists)
-* [0x12. C - More singly linked lists](./0x12-more_singly_linked_lists)
-* [0x13. C - Bit manipulation](./0x13-bit_manipulation)
-* [0x14. C - File I/O](./0x14-file_io)
-* [0x15. C - Simple Shell](https://github.com/bdbaraban/simple_shell/tree/master)
-* [0x16. C - Doubly linked lists](./0x16-doubly_linked_lists)
-* [0x17. C - Dynamic libraries](./0x17-dynamic_libraries)
-* [0x18. C - Stacks, Queues - LIFO, FIFO](https://github.com/bdbaraban/monty/tree/master)
-* [0x19. C - Hash tables](./0x19-hash_tables)
-* [0x1A. C - Sorting algorithms & Big O](./0x1A-sorting_algorithms)
-* [0x1B. C - Makefiles](./0x1B-makefiles)
-* [0x1C. C - Binary trees](https://github.com/bdbaraban/0x1C-binary_trees/tree/master)
-* [0x1D. C - Search Algorithms](./0x1D-search_algorithms)
+## Welcome
+A low-level programming language is a programming language that provides little or no abstraction from a computer's instruction set architecture—commands or functions in the language map closely to processor instructions. Generally this refers to either machine code or assembly language. The word "low" refers to the small or nonexistent amount of abstraction between the language and machine language; because of this, low-level languages are sometimes described as being "close to the hardware". Programs written in low-level languages tend to be relatively non-portable
 
-## Author :black_nib:
+## Table of Contents
+* [About](#about)
+* [Requirements](#requirements)
+* [Projects](#projects)
+* [Credits](#credits)
 
-* __Angeira Quiles__ <[AngeiraT](https://github.com/AngeiraT)>
+## About
+At Holberton School, there are several tracks to become a full stack software engineer. One of those tracks is the low level programming track which covers the following:
 
-## Acknowledgements :pray:
+- Compilation
+- Commenting code and following a coding style standard
+- Variables, types, operators, expressions, loops, nested loops
+- Conditional statements
+- Functions
+- Pre-processor, macros, header files, pointers, double pointers, function pointers, pointer arithmetic
+- Makefiles
+- Sorting and search algorithms
+and more!
 
-All work contained in this project was completed as part of the curriculum for
-Holberton School. Holberton School is a campus-based full-stack software
-engineering program that prepares students for careers in the tech industry
-using project-based peer learning. For more information, visit
-[this link](https://www.holbertonschool.com/).
+## Requirements
+* Ubuntu 20.04 LTS
+* gcc 4.8.4 (-Wall, -Werror, -Wextra, and -pedantic flags)
+
+## Projects
+1. [hello_world](./0x00-hello_world)
+2. [variables_if_else_while](./0x01-variables_if_else_while)
+3. [functions_nested_loops](./0x02-functions_nested_loops)
+4. [more_functions_nested_loops](./0x03-more_functions_nested_loops)
+5. [pointers_arrays_strings](./0x04-pointers_arrays_strings)
+6. [pointers_arrays_strings](./0x05-pointers_arrays_strings)
+7. [pointers_arrays_strings](./0x06-pointers_arrays_strings)
+8. [recursion](./0x07-recursion)
+9. [static_libraries](./0x08-static_libraries)
+10. [argc_argv](./0x09-argc_argv)
+11. [malloc_free](./0x0A-malloc_free)
+12. [more_malloc_free](./0x0B-more_malloc_free)
+13. [preprocessor](./0x0C-preprocessor)
+14. [structures_typedef](./0x0D-structures_typedef)
+15. [function_pointers](./0x0E-function_pointers)
+16. [variadic_functions](./0x0F-variadic_functions)
+17. [printf](https://github.com/sidneyriffic/printf) ** printf project **
+18. [singly_linked_lists](./0x11-singly_linked_lists)
+19. [more_singly_linked_lists](./0x12-more_singly_linked_lists)
+20. [bit_manipulation](./0x13-bit_manipulation)
+21. [file_io](./0x14-file_io)
+22. [simple_shell](https://github.com/mirandarevans/simple_shell) ** C Shell project **
+23. [doubly_linked_lists](./0x16-doubly_linked_lists)
+24. [dynamic_libraries](./0x17-dynamic_libraries)
+25. [stacks_queues_lifo_fifo](https://github.com/ibeckermayer/monty) ** Monty ByteCode Interpreter **
+26. [hash_tables](./0x19-hash_tables)
+27. [sorting_algorithms](./0x1A-sorting_algorithms) ** Sorting algorithms project **
+28. [makefiles](./0x1B-makefiles) **
+
+## Credits
+Collaborators are acknowledged within each project
+
+## Author
+* **Angeira T Quiles**
+ - [GitHub](https://github.com/AngeiraT)
